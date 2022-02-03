@@ -1,0 +1,8 @@
+<form class="mt-5" #userId="ngForm" (ngSubmit)="onSubmit(userId.value)">
+  <div class="form-group">
+    <label for="regId">Registered Code</label>
+    <input name="reg_code" type="email" class="form-control" id="regId" aria-describedby="idHelp" placeholder="Enter Registered ID" ngModel>
+    <small id="idHelp" class="form-text text-muted">Don't share this code with anyone else.</small>
+  </div>
+  <button type="submit" class="btn btn-primary mt-sm-2">Submit</button>
+</form>

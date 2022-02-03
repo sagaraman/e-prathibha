@@ -1,0 +1,13 @@
+
+<h2>Question List</h2>
+<form #startExam="ngForm" (ngSubmit)="onSubmit(startExam.value)">
+  <ul class="list-group mt-2">
+    <li class="list-group-item">Sample Question 1</li>
+    <li class="list-group-item">Sample Question 2</li>
+    <li class="list-group-item">Sample Question 3</li>
+    <li class="list-group-item">Sample Question 4</li>
+    <li class="list-group-item">Sample Question 5</li>
+  </ul>
+  <button type="submit" class="btn btn-primary mt-2" (click)="clickMethod()">Finish</button>
+  <button class="btn btn-primary mt-2 mx-2"  routerLink="/finishExam" >Finish Exam Page</button>
+</form>

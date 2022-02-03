@@ -1,0 +1,12 @@
+<h3>Your Exam has finished.</h3>
+<form #finishExam="ngForm" (ngSubmit)="onSubmit(finishExam.value)">
+  <div>
+    <label for="examId">ExamID</label>
+    <input name="examId" id="examId" type="text" ngModel />
+  </div>
+  <div class="mt-2">
+    <label for="qno">Question No.</label>
+    <input name="qno" id="qno" type="text" ngModel />
+  </div>
+  <button class="mt-2 btn btn-primary" type="submit">Post</button>
+</form>
